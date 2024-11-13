@@ -32,8 +32,7 @@ const startServer = () => {
   });
 };
 
-// const dbURI = process.env.MONGODB_URI || 'mongodb+srv://tony:uYxNkEthmiKwb0fR@cluster0.780sy.mongodb.net/DomoMaker';
-const dbURI = process.env.MONGODB_URI || require('../.mongo-connection.js');
+const dbURI = process.env.MONGODB_URI || 'mongodb://127.0.0.1/DomoMaker';
 
 mongoose.connect(dbURI)
   .then((instance) => {
